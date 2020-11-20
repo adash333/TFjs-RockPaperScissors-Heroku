@@ -17,7 +17,7 @@ let model;
 async function loadModel() {
 	console.log("model loading..");
 	$("#console").html(`<li>model loading...</li>`);
-	model=await tf.loadModel(`http://localhost:8080/sign_language_vgg16/model.json`);
+	model=await tf.loadModel(`../sign_language_vgg16/model.json`);
 	console.log("model loaded.");
 	$("#console").html(`<li>VGG16 pre trained model loaded.</li>`);
 };
